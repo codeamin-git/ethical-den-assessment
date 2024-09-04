@@ -5,6 +5,8 @@ import Main from './layout/Main.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Main />
+    <div className='max-w-[1440px] mx-auto bg-black text-white'>
+      <Main />
+    </div>
   </StrictMode>,
 )
