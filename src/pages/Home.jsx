@@ -6,6 +6,7 @@ import Outline from "../components/Home/Outline";
 import Process from "../components/Home/Process";
 import Testimonials from "../components/Home/Testimonials";
 import VideoTestimony from "../components/Home/VideoTestimony";
+import Footer from "../shared/Footer";
 import Navbar from "../shared/Navbar";
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
             <Testimonials />
             <Process />
             <CallToAction />
+            <Footer />
         </div>
     );
 };
