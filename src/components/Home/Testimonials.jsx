@@ -5,6 +5,7 @@ import avatar6 from '../../assets/images/Avatar-6.png'
 import avatar7 from '../../assets/images/Avatar-7.png'
 import avatar8 from '../../assets/images/Avatar-8.png'
 import avatar9 from '../../assets/images/Avatar-9.png'
+import { PiPhoneCall } from "react-icons/pi";
 
 
 const Testimonials = () => {
@@ -31,6 +32,11 @@ const Testimonials = () => {
 
                 <TestimonyCard img={avatar9} name={"Nathan Drake"} designation={"Founder of Something"} desc={"Ipsum donec tortor laoreet euismod phasellus. Tincidunt odio cursus eleifend fermentum. Non nisl mattis  Ipsum donec tortor laoreet euismod phasellus. Tincidunt odio cursus eleifend fermentum. Non nisl mattis  Ipsum donec tortor laoreet euismod phasellus. "}/>
             </div>
+
+            <button className="bg-primary text-black px-5 py-3 rounded-full hover:bg-opacity-80 font-bold flex items-center gap-1 mx-auto mt-12">
+                        <PiPhoneCall className="text-2xl" />
+                        Book A Call
+                    </button>
         </div>
     );
 };
