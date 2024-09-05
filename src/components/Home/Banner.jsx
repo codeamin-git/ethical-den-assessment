@@ -8,6 +8,10 @@ import management from '../../assets/icons/management.png'
 import connect from '../../assets/icons/connect.png'
 import navi from '../../assets/icons/navi.png'
 import ask from '../../assets/icons/ask.png'
+import BannerCard from "../Banner/BannerCard";
+import bannerIcon1 from '../../assets/icons/banner-1.png'
+import bannerIcon2 from '../../assets/icons/banner-2.png'
+import bannerIcon3 from '../../assets/icons/banner-3.png'
 
 const Banner = () => {
     const tags = <>
@@ -26,7 +30,7 @@ const Banner = () => {
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
                     Let's learn & gain skills
                 </h1>
-                <p className="text-lg md:text-xl max-w-2xl mb-6 text-slate-400">
+                <p className="text-lg md:text-xl max-w-2xl mb-6 text-ash">
                     Lorem ipsum dolor sit amet consectetur. In at mauris sollicitudin phasellus enim tellus et. Lectus mauris consequat nam leo eget.Lorem ipsum dolor sit amet consectetur. In at mauris sollicitudin phasellus enim tellus et. Lectus mauris consequat nam leo eget.
                 </p>
                 <div className="flex gap-4 flex-col md:flex-row mb-10">
@@ -34,7 +38,7 @@ const Banner = () => {
                         <PiPhoneCall className="text-2xl" />
                         Schedule A Call
                     </button>
-                    <button className="bg-[#232526] px-4 py-3 rounded-full hover:bg-gray-100 hover:text-black font-bold flex items-center gap-1">
+                    <button className="bg-secondary px-4 py-3 rounded-full hover:bg-gray-100 hover:text-black font-bold flex items-center gap-1">
                         <BsBoxes className="text-xl" />
                         View Case Studies
                     </button>
@@ -43,8 +47,17 @@ const Banner = () => {
                 <img src={bannerImg} alt="banner-image" />
             </div>
 
-            <div className="container mx-auto bg-[#141212] flex flex-col gap-2 md:flex-row items-center justify-evenly py-10">
+            <div className="container mx-auto bg-secondary flex flex-col gap-2 md:flex-row items-center justify-evenly py-10">
                 {tags}
+            </div>
+
+            {/* banner cards */}
+            <div className="my-20 flex flex-col md:flex-row items-center gap-8 max-w-7xl mx-auto">
+                <BannerCard icon={bannerIcon1} title={"Self-Expression"} desc={"sit aAdipiscing sed faucibus vitae nibh vitae id tortor sit. Integer quis volutpat aliquam turpis vitae risus quis euismod lectus. Quam in mauris sem cras orci sed luctus sit convallis."}/>
+
+                <BannerCard icon={bannerIcon2} title={"Confidence"} desc={"sit aAdipiscing sed faucibus vitae nibh vitae id tortor sit. Integer quis volutpat aliquam turpis vitae risus quis euismod lectus. Quam in mauris sem cras orci sed luctus sit convallis."}/>
+
+                <BannerCard icon={bannerIcon3} title={"Enhanced Authority"} desc={"sit aAdipiscing sed faucibus vitae nibh vitae id tortor sit. Integer quis volutpat aliquam turpis vitae risus quis euismod lectus. Quam in mauris sem cras orci sed luctus sit convallis."}/>
             </div>
         </section>
     );
