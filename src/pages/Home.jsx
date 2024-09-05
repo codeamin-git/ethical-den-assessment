@@ -1,5 +1,6 @@
 import AboutUs from "../components/Home/AboutUs";
 import Banner from "../components/Home/Banner";
+import CallToAction from "../components/Home/CallToAction";
 import Mentors from "../components/Home/Mentors";
 import Outline from "../components/Home/Outline";
 import Process from "../components/Home/Process";
@@ -18,6 +19,7 @@ const Home = () => {
             <Mentors />
             <Testimonials />
             <Process />
+            <CallToAction />
         </div>
     );
 };

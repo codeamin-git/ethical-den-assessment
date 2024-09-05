@@ -3,7 +3,7 @@ import laptop from '../../assets/images/laptop.png'
 
 const Process = () => {
     return (
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between py-20">
+        <div className="p-2 max-w-7xl mx-auto flex flex-col md:flex-row justify-between py-20">
             <img src={laptop} alt="laptop" />
 
             <div className='max-w-[550px] flex flex-col items-start'>
